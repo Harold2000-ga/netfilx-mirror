@@ -27,9 +27,9 @@ export const Main = () => {
   }
 
   return (
-    <div className='w-full h-[450px] text-white'>
+    <div className='w-full h-[500px] text-white'>
       <div className='w-full h-full'>
-        <div className='w-full h-[450px] bg-gradient-to-r from-black absolute'></div>
+        <div className='w-full h-[500px] bg-gradient-to-r from-black absolute'></div>
         <img
           className='w-full h-full object-fill'
           src={`https://image.tmdb.org/t/p/w500${movie?.backdrop_path}`}
@@ -47,7 +47,7 @@ export const Main = () => {
           </div>
           <p className='text-sm text-gray-400'>Realesed:{movie?.release_date}</p>
           <p className='w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200'>
-            {showAll ? movie?.overview : truncateString(movie?.overview, 250)}
+            {showAll ? movie?.overview : truncateString(movie?.overview, 230)}
           </p>
         </div>
       </div>
